@@ -4,6 +4,33 @@ A simple, ready-to-use Python project for extracting transcripts from YouTube vi
 
 ## 🚀 Quick Start (3 Steps!)
 
+### 🌟 **Option A: Web Dashboard (Recommended)**
+
+### 1️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 2️⃣ Start the Dashboard
+```bash
+# Windows: Double-click this file
+run_dashboard.bat
+
+# Or use command line
+streamlit run streamlit_dashboard.py
+```
+
+### 3️⃣ Use the Web Interface
+- Open your browser to `http://localhost:8501`
+- Paste any YouTube URL
+- Get instant transcript with live preview!
+- Toggle timestamps on/off
+- Download in multiple formats
+
+---
+
+### **Option B: Command Line**
+
 ### 1️⃣ Install Dependencies
 ```bash
 pip install -r requirements.txt
@@ -25,44 +52,65 @@ python simple_transcriber.py
 
 | File | Description |
 |------|-------------|
-| `simple_transcriber.py` | 🌟 **Start here!** Easy-to-use transcript extractor |
-| `youtube_transcriber.py` | Advanced version with more features |
+| `streamlit_dashboard.py` | 🌟 **NEW!** Beautiful web dashboard (recommended) |
+| `run_dashboard.bat` | 🖱️ One-click dashboard launcher for Windows |
+| `simple_transcriber.py` | 🌟 Easy-to-use command-line transcript extractor |
+| `youtube_transcriber.py` | Advanced command-line version with more features |
 | `examples.py` | Code examples and demonstrations |
-| `run_transcriber.bat` | Windows batch file for one-click execution |
+| `run_transcriber.bat` | Windows batch file for command-line version |
 | `requirements.txt` | Dependencies list |
-| `USAGE_GUIDE.md` | Detailed usage instructions |
+| `USAGE_GUIDE.md` | Detailed command-line usage instructions |
+| `DASHBOARD_GUIDE.md` | Complete dashboard usage guide |
 
 ## 🎯 What This Does
 
+✅ **🌐 Beautiful Web Dashboard** - Interactive interface with live preview  
 ✅ **Extracts transcripts** from YouTube videos  
 ✅ **Saves as text files** with timestamps  
+✅ **Toggle timestamps** on/off in real-time  
 ✅ **Supports multiple languages** (English, Spanish, German, etc.)  
 ✅ **Works with video URLs or IDs**  
 ✅ **Handles auto-generated and manual subtitles**  
-✅ **Translation capabilities** (advanced version)  
-✅ **Batch processing** (advanced version)  
+✅ **Translation capabilities** - Translate to different languages  
+✅ **Multiple download formats** - TXT, JSON  
+✅ **Batch processing** (command-line version)  
+✅ **Video embedding** - Preview videos in dashboard  
+✅ **Mobile responsive** - Works on all devices  
 
 ## 🔧 Usage Examples
 
-### Basic Usage
+### 🌟 **Web Dashboard (Recommended)**
+```bash
+# Windows - Double click
+run_dashboard.bat
+
+# Command line
+streamlit run streamlit_dashboard.py
+
+# Custom port
+streamlit run streamlit_dashboard.py --server.port 8080
+```
+
+### **Command Line Usage**
 ```bash
 python simple_transcriber.py
 # Enter: https://www.youtube.com/watch?v=VIDEO_ID
 ```
 
-### Command Line Usage
+### **Direct Command Line**
 ```bash
 python simple_transcriber.py https://www.youtube.com/watch?v=dQw4w9WgXcQ
 ```
 
-### Different Languages
+### **Different Languages**
 ```bash
 python simple_transcriber.py
 # Enter URL, then language: es (for Spanish)
 ```
 
-### Windows Users - One Click!
-Just double-click: `run_transcriber.bat`
+### **Windows Users - One Click!**
+- **Dashboard**: Double-click `run_dashboard.bat`
+- **Command Line**: Double-click `run_transcriber.bat`
 
 ## 📄 Output Example
 
@@ -179,8 +227,19 @@ If this helps you, please give it a star! It helps others find this tool.
 
 ## 🚀 Ready to Start?
 
+### 🌟 **Recommended: Web Dashboard**
+1. **Windows users:** Double-click `run_dashboard.bat`
+2. **Command line:** Run `streamlit run streamlit_dashboard.py`
+3. **Open browser:** Go to `http://localhost:8501`
+4. **Start transcribing:** Paste YouTube URLs and extract!
+
+### 💻 **Alternative: Command Line**
 1. **Windows users:** Double-click `run_transcriber.bat`
 2. **Everyone else:** Run `python simple_transcriber.py`
 3. **Developers:** Check out `examples.py` for code samples
+
+### 📚 **Need Help?**
+- **Dashboard Guide:** See `DASHBOARD_GUIDE.md`
+- **Command Line Guide:** See `USAGE_GUIDE.md`
 
 **Happy transcribing! 🎬📝**
