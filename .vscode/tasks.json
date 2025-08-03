@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run YouTube Transcriber",
+			"type": "shell",
+			"command": "python",
+			"args": [
+				"simple_transcriber.py"
+			],
+			"group": "build",
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}
